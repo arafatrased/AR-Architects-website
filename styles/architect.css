@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-fonts {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* shared styles */
+
+.bg-color{
+    background-color: rgba(255, 216, 14, 0.1);
+}
+.dark-2{
+    color: #424242;
+}
+
+.dark-3{
+    color: #727272;
+}
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    font-size: 1.28rem;
+}
+
+  /* header styles */
+
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+  /* navbar styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-item{
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Banner related styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner > img{
+    width: 100%
+}
+
+
+  /* main styles */
+
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  main > section{
+    margin-top: 130px;
+  }
+
+/* team section styles */
+.teams{
+    display: flex;
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px; 
+}
+.team-content{
+    margin-left: 130px;
+    max-width: 530px;
+
+}
+
+.team-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.quick-list{
+    font-weight: 500;
+}
+.feature-title{
+    color: rgba(255, 144, 14, 1);
+}
+  /* Respnsive Media Query */
+
+  @media screen and (max-width: 576px) {
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+    .team-content{
+        margin-left: 20px;
+    }
+    
+  }
